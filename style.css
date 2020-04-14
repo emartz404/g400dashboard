@@ -1,0 +1,299 @@
+@import "reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+/* Variables */
+:root {
+  --highlight: #292f55;
+  --footerStripe: #0f142a;
+  --rightSideText: #30395f;
+  --backgroundGradient: rgba(6, 0, 255, 1);
+  --searchboxBg: #171e39;
+  --searchboxText: #5e616f;
+  width: 100%;
+  font-family: "Lato", sans-serif;
+}
+
+/* ///////////////////////////////// */
+
+a {
+  text-decoration: none;
+  color: var(--rightSideText);
+}
+
+body {
+  background: url("https://webneel.com/wallpaper/sites/default/files/images/08-2018/3-nature-wallpaper-mountain.1440.jpg")
+    no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.blendedBackgroundColor {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--highlight);
+  opacity: 0.9;
+  z-index: -2;
+}
+
+.blendedGradient {
+  width: 100%;
+  height: 100vh;
+  background: var(--backgroundGradient);
+  background: linear-gradient(
+    0deg,
+    var(--backgroundGradient) 0%,
+    rgba(0, 212, 255, 0) 100%
+  );
+  z-index: -1;
+  position: fixed;
+  opacity: 0.2;
+}
+
+.calendarWidget {
+  display: flex;
+  justify-content: center;
+}
+
+.calendarWidget__wrapper {
+  background-color: white;
+  border-radius: 4px;
+  width: fit-content;
+  padding: 5px;
+}
+
+.calendarWidget__wrapper img {
+  height: 22em;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  z-index: 1;
+  width: 100%;
+}
+
+.footerStripe {
+  width: 100%;
+  height: 60px;
+  background-color: var(--footerStripe);
+  bottom: 0;
+  position: fixed;
+  z-index: -1;
+  color: white;
+  font-size: 12px;
+}
+
+.footerStripe a {
+  color: white;
+  text-decoration: underline;
+}
+
+.footerStripe a:after {
+  content: "|";
+  margin: 0 10px 0 10px;
+}
+
+.footerStripe a:last-child:after {
+  content: "";
+  margin: 0 10px 0 10px;
+}
+
+.footerStripe__container {
+  display: flex;
+  width: 47%;
+  height: 100%;
+  padding-left: 3em;
+  align-items: center;
+  font-weight: 900;
+  justify-content: space-between;
+}
+
+.inlineFlex {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+.leftSide {
+  padding: 3em;
+}
+
+.leftSide__header {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.leftSide__header__logo--wrapper {
+  background-color: white;
+  border-radius: 5px;
+  max-width: 10em;
+  padding: 1em;
+}
+
+.leftSide__header__logo--image img {
+  width: 100%;
+  height: 100%;
+}
+
+.leftSide__header__logo__text {
+  color: white;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.leftSide__contactInfo {
+  border: 1px solid white;
+  border-radius: 4px;
+  width: 14em;
+  padding: 1em;
+  color: white;
+}
+
+.leftSide__contactInfo__item {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.leftSide__contactInfo__item:last-child {
+  margin-bottom: 0px;
+}
+
+.leftSide__contactInfo__icon {
+  margin-right: 10px;
+  max-width: 15px;
+}
+
+.leftSide__widgetContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+}
+
+.leftSide__widgetContainer > div {
+  margin-bottom: 2em;
+  min-width: 33em;
+}
+
+.newsWidget__viewMore {
+  text-align: right;
+  margin-top: 1em;
+  text-decoration: underline;
+}
+
+.newsWidget__element {
+  display: inline-flex;
+  width: 100%;
+  position: relative;
+  padding: 1em 0;
+  align-items: center;
+}
+
+.newsWidget__element:after {
+  content: "";
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.newsWidget__date {
+  font-weight: bold;
+  margin-right: 2em;
+}
+
+.rightSide__container {
+  background-color: white;
+  border-radius: 4px;
+  height: 95vh;
+  width: 98%;
+  margin-top: 1em;
+  overflow-y: scroll;
+}
+
+.rightSide__container__wrapper {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+}
+
+.rightSide__title {
+  color: var(--rightSideText);
+  font-weight: bolder;
+  font-size: 18px;
+  margin-bottom: 1em;
+}
+
+.rightSide__widget {
+  margin-top: 2em;
+}
+.rightSide__widget:first-child {
+  margin-top: 0;
+}
+
+.leftSide__title {
+  margin-bottom: 15px;
+}
+
+.searchWidget__input {
+  background-color: var(--searchboxBg);
+  border-radius: 4px;
+  border: none;
+  width: 33em;
+  padding: 1em;
+  color: white;
+}
+
+.searchWidget__input::-webkit-input-placeholder,
+.searchWidget__input:-ms-input-placeholder,
+.searchWidget__input::placeholder {
+  color: var(--searchboxText);
+}
+
+.leftSide__description {
+  color: white;
+}
+
+.leftSide__widgetContainer h1 {
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.shortcut {
+  width: 7em;
+  text-align: center;
+  margin-right: 2em;
+}
+
+.shortcut:hover .shortcut__image__container {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.shortcut__image {
+  width: 100%;
+}
+
+.shortcut__image__container {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  padding: 1em;
+  height: 5em;
+  display: flex;
+  align-items: center;
+}
+
+.shortcut__text {
+  margin: 10px 0 30px 0;
+}
+
+.widget__wrapper {
+  width: 100%;
+  margin-left: 2em;
+  margin-top: 1em;
+}
