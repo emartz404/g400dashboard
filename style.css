@@ -15,6 +15,7 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    color: #333;
 }
 
 .blendedBackgroundColor {
@@ -252,7 +253,7 @@ body {
 }
 
 .shortcut {
-    width: 7em;
+    width: 7.5em;
     text-align: center;
     margin-right: 2em;
 }
@@ -282,4 +283,5 @@ body {
     width: 100%;
     margin-left: 2em;
     margin-top: 1em;
+    justify-content: center;
 }

@@ -1,0 +1,42 @@
+@media only screen and (max-width: 1023px) {
+    .container {
+        display: inline-block;
+    }
+    .leftSide__widgetContainer>div {
+        width: 100%;
+        min-width: 100%;
+    }
+    .searchWidget__input {
+        width: 100%;
+    }
+    .rightSide__container {
+        height: auto;
+        width: 100%;
+        border-radius: 0px;
+    }
+    .widget__wrapper {
+        margin-left: 0;
+    }
+    .newsWidget__element {
+        display: block;
+    }
+    .newsWidget__date {
+        margin-bottom: 10px;
+        color: #999;
+    }
+    .calendarWidget {
+        display: none;
+    }
+    .leftSide__widgetContainer {
+        margin-top: 0em;
+    }
+    .leftSide__header {
+        margin-bottom: 3em;
+    }
+    .leftSide {
+        padding-bottom: 0;
+    }
+    .leftSide__header__logo--wrapper {
+        max-width: 6em;
+    }
+}
