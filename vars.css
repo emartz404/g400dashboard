@@ -1,0 +1,12 @@
+/* Variables */
+
+:root {
+    --highlight: #292f55;
+    --footerStripe: #0f142a;
+    --rightSideText: #30395f;
+    --backgroundGradient: rgba(6, 0, 255, 1);
+    --searchboxBg: #171e39;
+    --searchboxText: #5e616f;
+    width: 100%;
+    font-family: "Lato", sans-serif;
+}
