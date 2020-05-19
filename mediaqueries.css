@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1023px) {
+@media (max-width: 1199.98px) {
     .container {
         display: inline-block;
     }
@@ -38,5 +38,39 @@
     }
     .leftSide__header__logo--wrapper {
         max-width: 6em;
+    }
+}
+
+@media (max-width: 575.98px) {}
+
+@media (max-width: 767.98px) {}
+
+@media (max-width: 991.98px) {
+    .leftSide {
+        padding: 1em;
+    }
+    .searchWidget__input {
+        width: 94%;
+    }
+    .leftSide__contactInfo {
+        display: none;
+    }
+    .leftSide__header__logo {
+        display: inline-flex;
+        align-items: center;
+    }
+    .leftSide__header__logo__text {
+        margin-left: 1em;
+    }
+    .leftSide__header__logo--wrapper {
+        max-width: 4em;
+        padding: 0.4em 0.2em;
+    }
+    .leftSide__header,
+    .leftSide__widgetContainer>div {
+        margin-bottom: 1.5em;
+    }
+    .rightSide__container {
+        margin-top: 0;
     }
 }
