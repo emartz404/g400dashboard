@@ -1,0 +1,142 @@
+@import "../vars.css";
+@import "../reset.css";
+a {
+    color: var(--rightSideText);
+}
+
+html {
+    background-color: var(--highlight)
+}
+
+body,
+html {
+    height: 100%;
+}
+
+header {
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+}
+
+.headerMenu {
+    margin-right: 2em;
+}
+
+.headerMenu>* {
+    padding-right: 1em;
+}
+
+.leftSide__header__logo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.leftSide__header__logo--wrapper {
+    background-color: white;
+    border-radius: 5px;
+    max-width: 10em;
+    padding: 1em;
+}
+
+.leftSide__header__logo--image {
+    margin-left: 2em;
+    width: 6em;
+}
+
+.leftSide__header__logo--image img {
+    width: 100%;
+    height: 100%;
+}
+
+.leftSide__header__pageTitle {
+    font-size: 22px;
+    color: #4c4c4c;
+}
+
+.selectorContainer {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.singlePage__title {
+    font-size: 32px;
+    text-align: center;
+    color: var(--highlight)
+}
+
+.singlePage__date {
+    color: #999;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.groupComponent {
+    background-color: white;
+    border-radius: 4px;
+    width: 90%;
+    min-height: 32em;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1.5em;
+}
+
+.groupComponent__text {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #4c4c4c;
+}
+
+.groupComponent__description {
+    padding: 2em;
+    color: #3c3c3c;
+    line-height: 25px;
+}
+
+
+/* Components */
+
+.footerStripe {
+    width: 100%;
+    height: 60px;
+    background-color: var(--footerStripe);
+    bottom: 0;
+    position: fixed;
+    z-index: -1;
+    color: white;
+    font-size: 12px;
+}
+
+.footerStripe a {
+    color: white;
+    text-decoration: underline;
+}
+
+.footerStripe a:after {
+    content: "|";
+    margin: 0 10px 0 10px;
+}
+
+.footerStripe a:last-child:after {
+    content: "";
+    margin: 0 10px 0 10px;
+}
+
+.footerStripe__container {
+    display: flex;
+    height: 100%;
+    padding-left: 3em;
+    align-items: center;
+    font-weight: 900;
+    justify-content: space-between;
+}
